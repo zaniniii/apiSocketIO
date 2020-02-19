@@ -1,0 +1,20 @@
+{
+  "name": "apiSocketIO",
+  "version": "1.0.0",
+  "description": "Modelo de um micro-service utilizando nodejs e a biblioteca SocketIO",
+  "main": "index.js",
+  "author": "Luiz Carlos Zanini <zanini@za9.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "start": "./node_modules/pm2/bin/pm2 start index.js --name 'MicroServiceSocketIO' && pm2 save"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.3"
+  }
+}
